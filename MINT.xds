@@ -1,0 +1,52 @@
+{
+    "name": "MINT",
+    "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
+        "urlPrefix": "http://localhost/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "exportPath": "",
+        "urlPrefixTemplate": "http://localhost:{port}/{path}"
+    },
+    "xdsVersion": "4.2.0",
+    "xdsBuild": 205,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "modern65",
+    "viewOrderMap": {
+        "view": [
+            "f18711e7-a4ae-4f46-b619-c99fba6c9a99",
+            "d2ae6351-5442-44c0-b345-b13a37ac2dbf",
+            "f99903cf-a912-45e4-91d7-01db3d0252f3",
+            "cff41bc7-0b03-4184-a9a9-da8933b0cff4",
+            "3edc0719-b188-4570-a646-84c845d56b6f",
+            "0e5e4db3-5a79-4814-a227-9256de4955f5",
+            "95a48823-0aee-4fc1-a05c-1c7a9d5fe3e8",
+            "721e40c0-7991-46f4-b336-9ae5d8c3c435",
+            "b7693b03-654d-414e-81e3-3dd49e7701b4"
+        ],
+        "store": [
+            "2437d9c8-a127-4e48-9623-de7718fd51d9"
+        ],
+        "controller": [],
+        "model": [
+            "fe3968d2-c599-4a9e-803a-1288251c5f50"
+        ],
+        "resource": [
+            "2e800b9d-2444-4d1f-b2ea-c9a34bf27380",
+            "e25c086d-056d-493f-9bcb-1d269609007f"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Quest"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "MyModel",
+    "designerId": "fe3968d2-c599-4a9e-803a-1288251c5f50",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "依頼者",
+                "name": "name"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "name": "string"
+            },
+            "name": "field",
+            "designerId": "b842cf1c-8d1f-4904-9846-744ac675e9a1"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "品目",
+                "name": "item"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "name": "string"
+            },
+            "name": "field1",
+            "designerId": "7105b043-eefa-4d9f-b941-1e8b240898cb"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "報酬",
+                "name": "reward"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "name": "string"
+            },
+            "name": "MyInteger",
+            "designerId": "499b1b20-970f-4798-9014-1f0e5a70a61f",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "v",
+                            "rec"
+                        ],
+                        "fn": "convert",
+                        "implHandler": [
+                            "return v + \" leaf\";"
+                        ]
+                    },
+                    "configAlternates": {
+                        "designer|params": "typedarray",
+                        "fn": "string",
+                        "implHandler": "code"
+                    },
+                    "name": "convert",
+                    "designerId": "f999ce2f-3952-43f7-b553-cb0da8facd55"
+                }
+            ]
+        }
+    ]
+}

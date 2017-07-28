@@ -1,0 +1,169 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "maintabpanel1",
+        "designer|userClassName": "MainTabPanel1"
+    },
+    "configAlternates": {
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MainTabPanel1",
+    "designerId": "d2ae6351-5442-44c0-b345-b13a37ac2dbf",
+    "viewControllerInstanceId": "0e5e4db3-5a79-4814-a227-9256de4955f5",
+    "viewModelInstanceId": "cff41bc7-0b03-4184-a9a9-da8933b0cff4",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": "x-fa fa-book",
+                "title": "クエスト依頼"
+            },
+            "configAlternates": {
+                "iconCls": "string",
+                "title": "string"
+            },
+            "name": "MyPanel",
+            "designerId": "adf74dd5-ba49-4074-8707-b4f1d6c03c18"
+        },
+        {
+            "type": "Ext.grid.Grid",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "iconCls": "x-fa fa-tasks",
+                "store": "QuestStore",
+                "title": "依頼クエスト一覧",
+                "width": "100%"
+            },
+            "configAlternates": {
+                "height": "auto",
+                "iconCls": "string",
+                "store": "store",
+                "title": "string",
+                "width": "auto"
+            },
+            "name": "MyGrid1",
+            "designerId": "5c2a42e1-334b-456d-8823-6778c988daa0",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "iconCls",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "name",
+                        "docked": null,
+                        "flex": 1,
+                        "minWidth": null,
+                        "text": "依頼者",
+                        "width": 100
+                    },
+                    "configAlternates": {
+                        "flex": "number",
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "minWidth": "auto",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn4",
+                    "designerId": "d34140c0-e62f-40d6-b1d0-0935990ef17a",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "reward",
+                        "docked": null,
+                        "flex": 1,
+                        "text": "報酬",
+                        "width": 100
+                    },
+                    "configAlternates": {
+                        "flex": "number",
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn5",
+                    "designerId": "7984d398-031f-48d8-9e33-eb63b1af13b6",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "item",
+                        "docked": null,
+                        "flex": 1,
+                        "text": "品目",
+                        "width": 100
+                    },
+                    "configAlternates": {
+                        "flex": "number",
+                        "dataIndex": "datafield",
+                        "docked": "string",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn3",
+                    "designerId": "ae7c7c36-9d04-4b2e-86ad-7c46c3877aa9",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "flex",
+                            "type": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

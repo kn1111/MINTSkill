@@ -1,0 +1,52 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        \"Name\": \"accusamus\",",
+            "        \"Items\": \"itaque\",",
+            "        \"Reward\": 753",
+            "    },",
+            "    {",
+            "        \"Name\": \"ad\",",
+            "        \"Items\": \"aliquid\",",
+            "        \"Reward\": 668",
+            "    },",
+            "    {",
+            "        \"Name\": \"optio\",",
+            "        \"Items\": \"numquam\",",
+            "        \"Reward\": 518",
+            "    },",
+            "    {",
+            "        \"Name\": \"consequatur\",",
+            "        \"Items\": \"totam\",",
+            "        \"Reward\": 110",
+            "    },",
+            "    {",
+            "        \"Name\": \"eveniet\",",
+            "        \"Items\": \"placeat\",",
+            "        \"Reward\": 740",
+            "    }",
+            "]"
+        ],
+        "designer|userAlias": "queststore",
+        "designer|userClassName": "QuestStore",
+        "model": "Quest",
+        "storeId": "QuestStore"
+    },
+    "configAlternates": {
+        "data": "array",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "name": "MyArrayStore1",
+    "designerId": "2437d9c8-a127-4e48-9623-de7718fd51d9"
+}
