@@ -1,0 +1,3 @@
+# theme-triton-e25c086d-056d-493f-9bcb-1d269609007f/licenses
+
+This folder contains the supported licenses for third-party use.

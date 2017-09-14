@@ -1,0 +1,66 @@
+{
+    "type": "Ext.data.ChainedStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "AcceptableQuestStore",
+        "designer|userClassName": "AcceptableQuestStore",
+        "source": "QuestStore",
+        "storeId": "AcceptableQuestStore"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "source": "store",
+        "storeId": "string",
+        "designer|userAlias": "string"
+    },
+    "name": "MyChainedStore",
+    "designerId": "57053fb6-16bf-40d3-a5e8-f9ecc9cf67dc",
+    "cn": [
+        {
+            "type": "Ext.util.Filter",
+            "reference": {
+                "name": "filters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyFilter2",
+            "designerId": "4e674b2b-880e-4ea6-8038-ce14f5b52f1b",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item"
+                        ],
+                        "fn": "filterFn",
+                        "implHandler": [
+                            "var acceptance = item.data.acceptance;",
+                            "",
+                            "if( acceptance === false){",
+                            "    return true;",
+                            "}else{",
+                            "    return false;",
+                            "}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "designer|params": "typedarray",
+                        "fn": "string",
+                        "implHandler": "code"
+                    },
+                    "name": "filterFn",
+                    "designerId": "dbe94876-ba19-47f2-b762-5f107b0ba812"
+                }
+            ]
+        }
+    ]
+}

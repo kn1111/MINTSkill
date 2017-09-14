@@ -1,0 +1,198 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GroupPerchase"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "MyModel",
+    "designerId": "20537ad2-3393-46c4-acd1-b424993bae42",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "number"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "field8",
+            "designerId": "5de0eb07-abfe-4a12-b02b-51d7e1032370"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "requester"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "field9",
+            "designerId": "5d7a153f-024a-4232-8d43-8d09eeb0fe50"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "wish"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "field10",
+            "designerId": "2b777c9c-b422-47aa-8c60-b262dc00a8a0"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "price"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "field11",
+            "designerId": "b1d6a7e5-95c1-4800-b162-245e818a8ab1"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "contractores"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "field12",
+            "designerId": "b6b15631-d6cf-4af5-a592-de1aac12ce75"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "fund"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "field13",
+            "designerId": "8d183c5b-9cb5-4b53-aedc-faf62fd75aed"
+        },
+        {
+            "type": "Ext.data.field.Boolean",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "complete"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyBoolean2",
+            "designerId": "06dd153f-3166-4ae6-82d8-fdadb3b8f73c"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "numberOfContractors"
+            },
+            "configAlternates": {
+                "mapping": "function",
+                "name": "string"
+            },
+            "name": "field14",
+            "designerId": "585832ad-582d-4618-8079-5673ec93fd70",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "v",
+                            "rec"
+                        ],
+                        "fn": "convert",
+                        "implHandler": [
+                            "return v.length();"
+                        ]
+                    },
+                    "configAlternates": {
+                        "designer|params": "typedarray",
+                        "fn": "string",
+                        "implHandler": "code"
+                    },
+                    "name": "convert",
+                    "designerId": "c8ec6841-c146-40b5-9a20-803971a9010e"
+                },
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "data"
+                        ],
+                        "fn": "mapping",
+                        "implHandler": [
+                            "return data.contractores;"
+                        ]
+                    },
+                    "configAlternates": {
+                        "designer|params": "typedarray",
+                        "fn": "string",
+                        "implHandler": "code"
+                    },
+                    "name": "mapping",
+                    "designerId": "533ae975-b04b-4b2d-bf24-812604477587"
+                }
+            ]
+        }
+    ]
+}

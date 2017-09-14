@@ -23,7 +23,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|displayName": "依頼者",
-                "name": "name"
+                "name": "requester"
             },
             "configAlternates": {
                 "designer|displayName": "string",
@@ -41,7 +41,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|displayName": "品目",
-                "name": "item"
+                "name": "missionContent"
             },
             "configAlternates": {
                 "designer|displayName": "string",
@@ -59,7 +59,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|displayName": "報酬",
-                "name": "reward"
+                "name": "compensation"
             },
             "configAlternates": {
                 "designer|displayName": "string",
@@ -94,6 +94,78 @@
                     "designerId": "f999ce2f-3952-43f7-b553-cb0da8facd55"
                 }
             ]
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "クエスト番号",
+                "name": "number"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "name": "string"
+            },
+            "name": "field2",
+            "designerId": "56a89dde-21e2-4baa-ba44-9d4ddfde688a"
+        },
+        {
+            "type": "Ext.data.field.Boolean",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "受注フラグ",
+                "name": "acceptance"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "name": "string"
+            },
+            "name": "MyBoolean",
+            "designerId": "4d59be1a-7b3b-4614-9901-d4e49715fc4f"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "受注者",
+                "name": "contractor"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "name": "string"
+            },
+            "name": "field3",
+            "designerId": "18264b4a-3c19-4b34-800e-9e36fc1340ad"
+        },
+        {
+            "type": "Ext.data.field.Boolean",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "完了フラグ",
+                "name": "complete"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "name": "string"
+            },
+            "name": "MyBoolean1",
+            "designerId": "26c10698-343b-4deb-b64e-8100426d5692"
         }
     ]
 }

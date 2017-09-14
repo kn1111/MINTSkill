@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "questcompletepopup",
+        "designer|userClassName": "PopupFormViewModel1"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "PopupFormViewModel1",
+    "designerId": "bf89ae32-300b-4644-8381-bbcc53b3abe8"
+}

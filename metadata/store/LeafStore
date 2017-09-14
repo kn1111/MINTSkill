@@ -1,0 +1,29 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        \"Amount\": \"nam\",",
+            "        \"Name\": \"quos\"",
+            "    }",
+            "]"
+        ],
+        "designer|userClassName": "LeafStore",
+        "model": "Leaf",
+        "storeId": "LeafStore"
+    },
+    "configAlternates": {
+        "data": "array",
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "name": "MyArrayStore",
+    "designerId": "9fbe3f22-c269-4cf1-aeaf-476dbe2af0e8"
+}

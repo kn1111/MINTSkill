@@ -1,0 +1,293 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": true,
+        "designer|userAlias": "questcancelpopup",
+        "designer|userClassName": "QuestCancelPopup",
+        "floating": true,
+        "modal": true,
+        "title": "受注確認"
+    },
+    "configAlternates": {
+        "floating": "boolean",
+        "centered": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "modal": "boolean",
+        "title": "string"
+    },
+    "name": "QuestAcceptPopup1",
+    "designerId": "0abffcce-10f8-40ab-8383-633a4d0a73d8",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "floating",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "395c7d84-affe-4769-9056-4a87386ac5a1",
+    "viewModelInstanceId": "a4363dfd-949b-47b7-8587-faa8a6a97230",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 27,
+                "html": "以下のクエストの受注を取り消ししますか？",
+                "margin": 10
+            },
+            "configAlternates": {
+                "height": "auto",
+                "html": "string",
+                "margin": "auto"
+            },
+            "name": "MyContainer5",
+            "designerId": "f2d20c2f-cc85-4189-ae21-057d5f7c4097"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": [
+                    "{quest.requester}"
+                ],
+                "clearable": false,
+                "editable": false,
+                "label": "依頼者",
+                "name": "name"
+            },
+            "configAlternates": {
+                "bind": "object",
+                "label": "string",
+                "name": "string",
+                "editable": "boolean",
+                "clearable": "boolean"
+            },
+            "name": "MyTextField",
+            "designerId": "1fe5813e-53bd-4942-b1ce-ca9fef1aa726"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": [
+                    "{quest.missionContent}"
+                ],
+                "clearable": false,
+                "editable": false,
+                "label": "依頼内容",
+                "name": "item"
+            },
+            "configAlternates": {
+                "bind": "object",
+                "label": "string",
+                "name": "string",
+                "editable": "boolean",
+                "clearable": "boolean"
+            },
+            "name": "MyTextField1",
+            "designerId": "a5612f19-879b-46f5-b316-3a59a99d5d51"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bind": [
+                    "{quest.compensation}"
+                ],
+                "clearable": false,
+                "editable": false,
+                "label": "報酬",
+                "name": "reward"
+            },
+            "configAlternates": {
+                "bind": "object",
+                "label": "string",
+                "name": "string",
+                "editable": "boolean",
+                "clearable": "boolean"
+            },
+            "name": "MyTextField2",
+            "designerId": "7db8d4bc-0234-435c-8a50-c040883d28da"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "configAlternates": {
+                "docked": "string"
+            },
+            "name": "MyToolbar",
+            "designerId": "2e90b7f0-45cb-4d51-91a8-b77fadbea757",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "x-fa fa-check",
+                        "text": "受注取り消し"
+                    },
+                    "configAlternates": {
+                        "iconCls": "string",
+                        "text": "string"
+                    },
+                    "name": "MyButton",
+                    "designerId": "f9a7d7ec-f396-4ab8-836b-f456c0eaea0d",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "submitUpdate",
+                                "implHandler": [
+                                    "var view = this.getView();",
+                                    "var record = view.config.record;",
+                                    "var tokenStore = Ext.getStore('UserDataStore');",
+                                    "var queststore = Ext.getStore('QuestStore');",
+                                    "var token = tokenStore.getData().items[\"0\"].data.token;",
+                                    "var obj = {\"peers\": [\"13.113.98.75:7051\"],\"fcn\":\"cancel\",\"args\":[record.number]};",
+                                    "",
+                                    "var authorization = 'Bearer '+token;",
+                                    "",
+                                    "//Encode Data",
+                                    "var data = Ext.JSON.encode(obj);",
+                                    "",
+                                    "//Post Data",
+                                    "Ext.Ajax.request({",
+                                    "    url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc2', // url : this.getUrl(),",
+                                    "    method : \"POST\",",
+                                    "    headers: {",
+                                    "        'authorization': authorization,",
+                                    "        'Content-Type': 'application/json'",
+                                    "    },",
+                                    "    params : data,",
+                                    "    useDefaultXhrHeader : false,",
+                                    "",
+                                    "",
+                                    "    success : function(response) {",
+                                    "        Ext.Ajax.request({",
+                                    "            url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc2?peer=peer1&fcn=query&args=%5B%22a%22%5D', // url : this.getUrl(),",
+                                    "            method : \"GET\",",
+                                    "            headers: {",
+                                    "                'Content-Type': 'application/json',",
+                                    "                'Authorization': authorization",
+                                    "            },",
+                                    "",
+                                    "            success : function(response) {",
+                                    "                var jsonData = response.responseText;",
+                                    "                console.log(jsonData);",
+                                    "                var loadData = JSON.parse(jsonData);",
+                                    "                console.log(loadData);",
+                                    "                queststore.setData(loadData);",
+                                    "                console.log(queststore);",
+                                    "                // Ext.Msg.alert('Success', 'クエストをキャンセルしました。');",
+                                    "            },",
+                                    "            failure : function(response) {",
+                                    "                //Ext.Msg.alert('Error', '通信失敗');",
+                                    "            }",
+                                    "        });",
+                                    "",
+                                    "    },",
+                                    "    failure : function(response) {",
+                                    "        //Ext.Msg.alert('Error', 'POST Error');",
+                                    "    }});",
+                                    "view.destroy();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "submitUpdate",
+                            "designerId": "0be03d5b-ddac-4856-b517-fb687c72fc2c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "x-fa fa-close",
+                        "text": "キャンセル"
+                    },
+                    "configAlternates": {
+                        "iconCls": "string",
+                        "text": "string"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "ed2cd792-1ed1-4d1e-b0c6-352aff1ed31e",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "cancelUpdate",
+                                "implHandler": [
+                                    "var view = this.getView();",
+                                    "    view.destroy();"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "cancelUpdate",
+                            "designerId": "ab19ccc9-7244-4bab-9d3b-2944858b1b2f"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

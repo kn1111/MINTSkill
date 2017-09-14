@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "questcancelpopup",
+        "designer|userClassName": "QuestAcceptPopupViewModel1"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "QuestAcceptPopupViewModel1",
+    "designerId": "a4363dfd-949b-47b7-8587-faa8a6a97230"
+}

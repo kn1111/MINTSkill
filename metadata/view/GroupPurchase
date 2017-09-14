@@ -1,0 +1,185 @@
+{
+    "type": "Ext.grid.Grid",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "grouppurchase",
+        "designer|userClassName": "GroupPurchase",
+        "height": "100%",
+        "store": "GroupPerchaseStore",
+        "title": "共同購入参加",
+        "width": "100%"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "store": "store",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "MyGrid",
+    "designerId": "51a85144-0398-4385-a9fb-d5e1d6b58bfd",
+    "viewControllerInstanceId": "ae46354b-f562-43d1-a652-b69d99ca27b4",
+    "viewModelInstanceId": "8de0b9e4-1029-4a3b-9d97-6f1c14d8934b",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "requester",
+                "docked": null,
+                "flex": "1",
+                "text": "依頼者",
+                "width": 70
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "flex": "string",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn7",
+            "designerId": "03b4546a-34d2-46d1-9ecb-aef936a2a45d",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "number",
+                "docked": null,
+                "flex": "1",
+                "text": "目的",
+                "width": 89
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "width": "auto",
+                "flex": "string"
+            },
+            "name": "MyColumn8",
+            "designerId": "f034a467-955d-476d-8c9f-7297be5d23f3",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "price",
+                "docked": null,
+                "flex": "1",
+                "text": "目標金額",
+                "width": 89
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "width": "auto",
+                "flex": "string"
+            },
+            "name": "MyColumn9",
+            "designerId": "7fe7f402-a3c3-4949-abbd-fd792fa6e9ac",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "fund",
+                "docked": null,
+                "flex": "1",
+                "text": "目標人数",
+                "width": 70
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "width": "auto",
+                "flex": "string"
+            },
+            "name": "MyColumn10",
+            "designerId": "fb9bb04d-2513-4fd4-8194-0afcf8398e9e",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "numberOfContractors",
+                "docked": null,
+                "flex": "1",
+                "text": "現在人数",
+                "width": 80
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "flex": "string",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn11",
+            "designerId": "8ee0d737-342c-4558-8b35-f89dcb0918ad",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

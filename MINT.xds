@@ -2,20 +2,29 @@
     "name": "MINT",
     "settings": {
         "cmd": {
-            "license": "commercial"
+            "license": "commercial",
+            "cmdVersion": "6.5.0.180",
+            "frameworkVersion": "6.5.0.775"
         },
-        "urlPrefix": "http://localhost/",
+        "urlPrefix": "http://localhost:49304/",
         "canvasControls": {
             "viewportSize": {
-                "name": "iPhone",
+                "name": "iPhone 5",
                 "builtIn": true,
-                "height": 480,
+                "height": 568,
                 "width": 320
             },
-            "viewportOrientation": "portrait"
+            "viewportOrientation": "landscape"
         },
-        "exportPath": "",
-        "urlPrefixTemplate": "http://localhost:{port}/{path}"
+        "exportPath": "C:/SPA/MINT/",
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
     },
     "xdsVersion": "4.2.0",
     "xdsBuild": 205,
@@ -24,22 +33,60 @@
     "framework": "modern65",
     "viewOrderMap": {
         "view": [
-            "f18711e7-a4ae-4f46-b619-c99fba6c9a99",
-            "d2ae6351-5442-44c0-b345-b13a37ac2dbf",
-            "f99903cf-a912-45e4-91d7-01db3d0252f3",
-            "cff41bc7-0b03-4184-a9a9-da8933b0cff4",
-            "3edc0719-b188-4570-a646-84c845d56b6f",
-            "0e5e4db3-5a79-4814-a227-9256de4955f5",
             "95a48823-0aee-4fc1-a05c-1c7a9d5fe3e8",
+            "0abffcce-10f8-40ab-8383-633a4d0a73d8",
+            "901df8c0-496c-47e7-8154-4448982af139",
             "721e40c0-7991-46f4-b336-9ae5d8c3c435",
-            "b7693b03-654d-414e-81e3-3dd49e7701b4"
+            "a4363dfd-949b-47b7-8587-faa8a6a97230",
+            "bf89ae32-300b-4644-8381-bbcc53b3abe8",
+            "b7693b03-654d-414e-81e3-3dd49e7701b4",
+            "395c7d84-affe-4769-9056-4a87386ac5a1",
+            "64746fe0-bfc8-4703-891d-8b87eb742bfa",
+            "2ae02145-ad47-43d1-9ebf-37c75a63b7a8",
+            "b44b9899-0e17-43cc-bb27-2a3b66a82436",
+            "8da7226a-95d7-49e7-b079-726e136b2e24",
+            "5865a9f7-98c6-4733-aff0-b8614890091f",
+            "92fa6e35-2b9b-4e9e-ad8e-f0f23b73984e",
+            "86da3798-a65b-4494-bc90-a7fcb5e46376",
+            "560c29e0-5857-4599-94de-5be7c704c518",
+            "66a3b9e9-e24a-4467-9276-6fffd34ffac0",
+            "5529c123-2521-4617-a497-c27d67108644",
+            "40cc5eea-f77f-4f6f-a85c-2c3c4baa6def",
+            "9368ec96-0d5c-4161-917f-cc0f47b2be11",
+            "ac75e425-f2ce-4483-9294-df5ea1f37e16",
+            "063e6c83-4eb5-4621-a26e-17cb622135b1",
+            "85eb98d8-41b9-4cc6-9a6c-9baafe72c75b",
+            "5fd1e2b4-3c3b-4c5d-8834-25e320a61581",
+            "88acf63c-a629-412c-aef8-be6e4edc1d8a",
+            "ee1be1e6-3306-47b5-9698-eb31346ebd9f",
+            "6b2b0a97-8775-4708-906a-6764e74d0c37",
+            "5a546083-acbe-4358-ac49-fbbccde0ae93",
+            "8b792689-ecee-4f62-bb11-3fdddc71fe7b",
+            "dcba5036-a021-4bea-800b-78a67e1a5e3b",
+            "bfb1082c-0c73-468b-affb-e0b97ed87e47",
+            "155befcd-9e38-446b-8e22-5efd9b13ac16",
+            "a0149586-ce8d-4d78-b5d6-430e6b23ecf6",
+            "51a85144-0398-4385-a9fb-d5e1d6b58bfd",
+            "8de0b9e4-1029-4a3b-9d97-6f1c14d8934b",
+            "ae46354b-f562-43d1-a652-b69d99ca27b4"
         ],
         "store": [
-            "2437d9c8-a127-4e48-9623-de7718fd51d9"
+            "2437d9c8-a127-4e48-9623-de7718fd51d9",
+            "2911938f-d5ec-4f7e-9828-c5b5292267bc",
+            "86949606-f60b-4638-8eba-0ca6c8899788",
+            "c66c2923-20b5-4e37-ae5f-9afd72c1f212",
+            "9fbe3f22-c269-4cf1-aeaf-476dbe2af0e8",
+            "57053fb6-16bf-40d3-a5e8-f9ecc9cf67dc",
+            "9cc4c08a-f363-4677-a759-62f84a95b511"
         ],
-        "controller": [],
+        "controller": [
+            "af0993cc-3def-490a-b26a-c409e73f0a17"
+        ],
         "model": [
-            "fe3968d2-c599-4a9e-803a-1288251c5f50"
+            "fe3968d2-c599-4a9e-803a-1288251c5f50",
+            "b7c34026-308e-44d7-9611-6cfa557e0619",
+            "a5a31881-9870-4ff1-b576-6bc90b589f1c",
+            "20537ad2-3393-46c4-acd1-b424993bae42"
         ],
         "resource": [
             "2e800b9d-2444-4d1f-b2ea-c9a34bf27380",

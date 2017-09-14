@@ -21,19 +21,41 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'Quest'
+        'User',
+        'Quest',
+        'Leaf',
+        'GroupPerchase'
     ],
     stores: [
-        'QuestStore'
+        'UserDataStore',
+        'QuestStore',
+        'LeafStore',
+        'MyOrderedQuestStore',
+        'AcceptableQuestStore',
+        'MyAcceptedQuestStore',
+        'GroupPerchase'
     ],
     views: [
-        'QuestBoard',
-        'MainTabPanel1'
+        'order',
+        'QuestAcceptPopup',
+        'QuestCompletePopup',
+        'login',
+        'top',
+        'ordered',
+        'accepted',
+        'accept',
+        'BaseMenu',
+        'QuestCancelPopup',
+        'Menu',
+        'GroupPurchase'
+    ],
+    controllers: [
+        'MyController'
     ],
     name: 'QuickStart',
 
     launch: function() {
-        Ext.create('QuickStart.view.QuestBoard', {fullscreen: true});
+        Ext.create('QuickStart.view.login', {fullscreen: true});
     }
 
 });

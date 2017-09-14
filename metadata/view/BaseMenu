@@ -1,0 +1,207 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "basemenu",
+        "designer|userClassName": "BaseMenu"
+    },
+    "configAlternates": {
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyContainer",
+    "designerId": "2ae02145-ad47-43d1-9ebf-37c75a63b7a8",
+    "viewControllerInstanceId": "8da7226a-95d7-49e7-b079-726e136b2e24",
+    "viewModelInstanceId": "b44b9899-0e17-43cc-bb27-2a3b66a82436",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyContainer2",
+            "designerId": "16392cb7-2b05-4978-912f-6e90f676196e",
+            "cn": [
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "docked": "top",
+                        "title": "DCS MINT"
+                    },
+                    "configAlternates": {
+                        "docked": "string",
+                        "title": "string",
+                        "container|align": "string"
+                    },
+                    "name": "MyTitleBar",
+                    "designerId": "1c569901-c84e-421f-a54c-d20e963366e1",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "menuButton",
+                                "designer|uiInterfaceName": "alt",
+                                "docked": null,
+                                "iconCls": "fa-bars",
+                                "ui": "alt"
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "iconCls": "string",
+                                "designer|uiInterfaceName": "string",
+                                "docked": "string",
+                                "ui": "string"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "dab6c1f9-aeae-4406-8ea0-1aae947ab714",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonTap",
+                                        "implHandler": [
+                                            "Ext.Viewport.setMenu(",
+                                            "    {",
+                                            "    xtype: 'menu'},",
+                                            "    {",
+                                            "    side: 'left'}",
+                                            "    );",
+                                            "",
+                                            "Ext.Viewport.showMenu('left');"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onButtonTap",
+                                    "designerId": "ec11e0e6-b1f9-48a1-8a10-a66e08476835"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeItem": 4,
+                "container|animation": false,
+                "height": "100%",
+                "itemId": "maincontents",
+                "layout": "card"
+            },
+            "configAlternates": {
+                "height": "auto",
+                "itemId": "string",
+                "layout": "string",
+                "activeItem": "number",
+                "container|animation": "auto"
+            },
+            "name": "MyContainer3",
+            "designerId": "a2ff6047-8c8c-4ee7-96cf-a9208ddcb567",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "order1",
+                    "designerId": "2ed0da14-8480-4f42-9507-67a5eeb2eb68",
+                    "masterInstanceId": "88acf63c-a629-412c-aef8-be6e4edc1d8a"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "依頼済みクエスト一覧"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string"
+                    },
+                    "name": "ordered1",
+                    "designerId": "7d2fd355-a40b-4fbc-8600-ce7344aa0a4c",
+                    "masterInstanceId": "063e6c83-4eb5-4621-a26e-17cb622135b1"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "受注可能クエスト一覧"
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string"
+                    },
+                    "name": "accept2",
+                    "designerId": "37504f7f-6c4e-4f31-849e-18d79f504a9d",
+                    "masterInstanceId": "5529c123-2521-4617-a497-c27d67108644"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "accepted1",
+                    "designerId": "a805ebc3-c4e1-4755-b403-7f6d51944f12",
+                    "masterInstanceId": "40cc5eea-f77f-4f6f-a85c-2c3c4baa6def"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "top1",
+                    "designerId": "af8b49c0-38b8-4574-8c8c-91a19c3b3f31",
+                    "masterInstanceId": "5a546083-acbe-4358-ac49-fbbccde0ae93"
+                }
+            ]
+        }
+    ]
+}

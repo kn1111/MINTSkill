@@ -1,0 +1,120 @@
+{
+    "type": "Ext.menu.Menu",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "menu",
+        "designer|userClassName": "Menu",
+        "width": 200
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "width": "auto"
+    },
+    "name": "MyMenu",
+    "designerId": "5865a9f7-98c6-4733-aff0-b8614890091f",
+    "viewControllerInstanceId": "86da3798-a65b-4494-bc90-a7fcb5e46376",
+    "viewModelInstanceId": "92fa6e35-2b9b-4e9e-ad8e-f0f23b73984e",
+    "cn": [
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "TOP",
+                "href": "#top",
+                "text": "TOP"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "href": "string",
+                "text": "string"
+            },
+            "name": "MyMenuItem4",
+            "designerId": "4c5f8eb8-2347-4b71-929a-27d810edf496"
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "クエスト依頼",
+                "href": "#order",
+                "text": "クエスト依頼"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "href": "string",
+                "text": "string"
+            },
+            "name": "MyMenuItem",
+            "designerId": "b68a6b30-bd76-497e-9093-f20d80897d08"
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "href": "#ordered",
+                "text": "依頼済みクエスト一覧"
+            },
+            "configAlternates": {
+                "href": "string",
+                "text": "string"
+            },
+            "name": "MyMenuItem1",
+            "designerId": "5eb9e88d-efa3-4e0a-b16e-93567766c9f5"
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "受注可能クエスト一覧",
+                "href": "#accept",
+                "text": "受注可能クエスト一覧"
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "href": "string",
+                "text": "string"
+            },
+            "name": "MyMenuItem2",
+            "designerId": "da71ded9-ec08-40cd-896a-6db0f100fd3c"
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "href": "#accepted",
+                "text": "受注済みクエスト一覧"
+            },
+            "configAlternates": {
+                "href": "string",
+                "text": "string"
+            },
+            "name": "MyMenuItem3",
+            "designerId": "ff085d67-fbd3-4f40-b14b-d7c6cb0eea06"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "type": "Ext.data.ChainedStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyOrderedQuestStore",
+        "source": "QuestStore",
+        "storeId": "MyOrderedQuestStore"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "source": "store",
+        "storeId": "string"
+    },
+    "name": "MyChainedStore",
+    "designerId": "86949606-f60b-4638-8eba-0ca6c8899788",
+    "cn": [
+        {
+            "type": "Ext.util.Filter",
+            "reference": {
+                "name": "filters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyFilter",
+            "designerId": "78afe8bb-7496-4485-8c07-6f48c5937323",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item"
+                        ],
+                        "fn": "filterFn",
+                        "implHandler": [
+                            "var requester = item.data.requester;",
+                            "",
+                            "if(requester == \"a\"){",
+                            "    return true;",
+                            "}else{",
+                            "    return false;",
+                            "}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "designer|params": "typedarray",
+                        "fn": "string",
+                        "implHandler": "code"
+                    },
+                    "name": "filterFn",
+                    "designerId": "36e1523d-8ec0-4268-aa6e-f855d6cdcd90"
+                }
+            ]
+        }
+    ]
+}

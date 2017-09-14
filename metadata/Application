@@ -6,23 +6,47 @@
     },
     "codeClass": null,
     "userConfig": {
+        "controllers": [
+            "MyController"
+        ],
         "models": [
-            "Quest"
+            "User",
+            "Quest",
+            "Leaf",
+            "GroupPerchase"
         ],
         "name": "QuickStart",
         "stores": [
-            "QuestStore"
+            "UserDataStore",
+            "QuestStore",
+            "LeafStore",
+            "MyOrderedQuestStore",
+            "AcceptableQuestStore",
+            "MyAcceptedQuestStore",
+            "GroupPerchase"
         ],
         "views": [
-            "QuestBoard",
-            "MainTabPanel1"
+            "order",
+            "QuestAcceptPopup",
+            "QuestCompletePopup",
+            "login",
+            "top",
+            "ordered",
+            "accepted",
+            "accept",
+            "BaseMenu",
+            "QuestCancelPopup",
+            "Menu",
+            "GroupPurchase"
         ]
     },
     "configAlternates": {
         "models": "typedarray",
         "name": "string",
         "stores": "typedarray",
-        "views": "typedarray"
+        "views": "typedarray",
+        "controllers": "typedarray",
+        "defaultToken": "string"
     },
     "name": "Application",
     "designerId": "application"

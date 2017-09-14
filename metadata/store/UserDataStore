@@ -1,0 +1,20 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "UserDataStore",
+        "model": "User",
+        "storeId": "UserDataStore"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "name": "MyArrayStore",
+    "designerId": "c66c2923-20b5-4e37-ae5f-9afd72c1f212"
+}

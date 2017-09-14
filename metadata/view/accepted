@@ -1,0 +1,169 @@
+{
+    "type": "Ext.grid.Grid",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "accepted",
+        "designer|userClassName": "accepted",
+        "height": "100%",
+        "iconCls": "x-fa fa-tasks",
+        "store": "MyAcceptedQuestStore",
+        "title": "受注済みクエスト一覧",
+        "width": "100%"
+    },
+    "configAlternates": {
+        "height": "auto",
+        "iconCls": "string",
+        "store": "store",
+        "title": "string",
+        "width": "auto",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyGrid1",
+    "designerId": "40cc5eea-f77f-4f6f-a85c-2c3c4baa6def",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "iconCls",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "ac75e425-f2ce-4483-9294-df5ea1f37e16",
+    "viewModelInstanceId": "9368ec96-0d5c-4161-917f-cc0f47b2be11",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "requester",
+                "docked": null,
+                "flex": 1,
+                "minWidth": null,
+                "text": "依頼者",
+                "width": 100
+            },
+            "configAlternates": {
+                "flex": "number",
+                "dataIndex": "datafield",
+                "docked": "string",
+                "minWidth": "auto",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn4",
+            "designerId": "ceedce5d-f5b6-4c71-8b0a-4c5719f5153a",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "missionContent",
+                "docked": null,
+                "flex": 1,
+                "text": "依頼内容",
+                "width": 100
+            },
+            "configAlternates": {
+                "flex": "number",
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn3",
+            "designerId": "2356655b-eeb5-4644-9be6-7ca2495f049f",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "compensation",
+                "docked": null,
+                "flex": 1,
+                "text": "報酬",
+                "width": 100
+            },
+            "configAlternates": {
+                "flex": "number",
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn5",
+            "designerId": "46cec070-61c8-45a6-9fe8-5f337749f9c4",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "flex",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onGridChildtap",
+                "implHandler": [
+                    "var record = location.record.data;",
+                    "",
+                    "Ext.Viewport.add({",
+                    "    xtype: 'questcancelpopup',",
+                    "    width: 400,",
+                    "    record: record,",
+                    "    viewModel : {",
+                    "        data: {",
+                    "            quest: record",
+                    "        }",
+                    "    }",
+                    "});"
+                ],
+                "name": "childtap",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onGridChildtap",
+            "designerId": "a907f7c9-ce81-4765-8237-f0bebfd2a6d3"
+        }
+    ]
+}

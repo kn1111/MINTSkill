@@ -1,0 +1,209 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "login",
+        "designer|userClassName": "login"
+    },
+    "configAlternates": {
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyContainer8",
+    "designerId": "bfb1082c-0c73-468b-affb-e0b97ed87e47",
+    "viewControllerInstanceId": "a0149586-ce8d-4d78-b5d6-430e6b23ecf6",
+    "viewModelInstanceId": "155befcd-9e38-446b-8e22-5efd9b13ac16",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 250,
+                "margin": "100 0 0 0",
+                "zIndex": 0
+            },
+            "configAlternates": {
+                "centered": "boolean",
+                "height": "auto",
+                "margin": "auto",
+                "zIndex": "number"
+            },
+            "name": "MyFormPanel",
+            "designerId": "419eabe6-5d0b-4067-b936-ef468dcdf052",
+            "cn": [
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "ログイン画面",
+                        "padding": "0 0 10 0",
+                        "style": [
+                            "'font-size: 20px'",
+                            ""
+                        ]
+                    },
+                    "configAlternates": {
+                        "style": "object",
+                        "html": "string",
+                        "padding": "auto"
+                    },
+                    "name": "MyLabel1",
+                    "designerId": "62e82678-3ab6-40a9-9e74-954421a28c95"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "ユーザーID"
+                    },
+                    "configAlternates": {
+                        "label": "string"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "7269878a-8129-4820-8ccd-3456e162c11f"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "パスワード"
+                    },
+                    "configAlternates": {
+                        "label": "string"
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "c0a19455-cd16-413b-a4c3-8f49540e2bde"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "ログイン"
+                    },
+                    "configAlternates": {
+                        "text": "string"
+                    },
+                    "name": "MyButton4",
+                    "designerId": "c1e83566-aca1-431f-9dce-0d180464255e",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonTap",
+                                "implHandler": [
+                                    "var store = Ext.getStore('UserDataStore');",
+                                    "var queststore = Ext.getStore('QuestStore');",
+                                    "var leafstore = Ext.getStore('LeafStore');",
+                                    "var view = this;",
+                                    "Ext.Ajax.request({",
+                                    "    url : 'http://52.199.251.125:4000/users', // url : this.getUrl(),",
+                                    "    method : \"POST\",",
+                                    "    headers: {",
+                                    "        'Content-Type': 'application/x-www-form-urlencoded'",
+                                    "    },",
+                                    "    params : {'username': 'jim','orgName': 'org1'},",
+                                    "    useDefaultXhrHeader : false,",
+                                    "",
+                                    "    success : function(response) {",
+                                    "        var jsonData = response.responseText;",
+                                    "        var data = JSON.parse(jsonData);",
+                                    "        var token = data['token'];",
+                                    "        var loadData = {\"username\":\"a\",\"token\": token};",
+                                    "        store.loadData([loadData],false);",
+                                    "        var authorization = 'Bearer '+token;",
+                                    "        Ext.Ajax.request({",
+                                    "            url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc2?peer=peer1&fcn=query&args=%5B%22a%22%5D', // url : this.getUrl(),",
+                                    "            method : \"GET\",",
+                                    "            headers: {",
+                                    "                'Content-Type': 'application/json',",
+                                    "                'Authorization': authorization",
+                                    "            },",
+                                    "",
+                                    "            success : function(response) {",
+                                    "                var jsonData = response.responseText;",
+                                    "                var loadData = JSON.parse(jsonData);",
+                                    "                queststore.setData(loadData);",
+                                    "                console.log(queststore.getData());",
+                                    "",
+                                    "",
+                                    "                Ext.Ajax.request({",
+                                    "                    url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc1?peer=peer1&fcn=query&args=%5B%22a%22%5D', // url : this.getUrl(),",
+                                    "                    method : \"GET\",",
+                                    "                    headers: {",
+                                    "                        'Content-Type': 'application/json',",
+                                    "                        'Authorization': authorization",
+                                    "                    },",
+                                    "",
+                                    "                    success : function(response) {",
+                                    "                        var jsonLeafData = response.responseText;",
+                                    "                        console.log(jsonLeafData);",
+                                    "                        var loadLeafData = JSON.parse(jsonLeafData);",
+                                    "                        leafstore.loadData([loadLeafData],false);",
+                                    "                        console.log(leafstore.getData());",
+                                    "                        Ext.Viewport.remove(Ext.Viewport.getActiveItem(), true);",
+                                    "                        Ext.Viewport.setActiveItem({",
+                                    "                            xtype: \"basemenu\"",
+                                    "                        });",
+                                    "                    },",
+                                    "                    failure : function(response) {",
+                                    "                        // Ext.Msg.alert('Error', '通信失敗');",
+                                    "                    }",
+                                    "                });",
+                                    "            },",
+                                    "            failure : function(response) {",
+                                    "                // Ext.Msg.alert('Error', '通信失敗');",
+                                    "            }});",
+                                    "    },",
+                                    "    failure : function(response) {",
+                                    "        // Ext.Msg.alert('Error', '通信失敗');",
+                                    "    }});"
+                                ],
+                                "name": "tap",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onButtonTap",
+                            "designerId": "36988d39-4e86-42b0-9c10-9d22989d56ed"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

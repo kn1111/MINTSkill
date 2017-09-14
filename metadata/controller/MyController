@@ -1,0 +1,133 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "MyController",
+    "designerId": "af0993cc-3def-490a-b26a-c409e73f0a17",
+    "cn": [
+        {
+            "type": "Ext.route.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "goOrder",
+                "implHandler": [
+                    "var maincontents = Ext.ComponentQuery.query('#maincontents')[0];",
+                    "maincontents.setActiveItem(0);"
+                ],
+                "url": "order"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "url": "string"
+            },
+            "name": "goOrder",
+            "designerId": "7baf5246-6179-4f27-a981-418b535aee32"
+        },
+        {
+            "type": "Ext.route.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "goAccept",
+                "implHandler": [
+                    "var maincontents = Ext.ComponentQuery.query('#maincontents')[0];",
+                    "maincontents.setActiveItem(2);"
+                ],
+                "url": "accept"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "url": "string"
+            },
+            "name": "goAccept",
+            "designerId": "e01930e7-c545-4343-995c-2257d39f8340"
+        },
+        {
+            "type": "Ext.route.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "goAccepted",
+                "implHandler": [
+                    "var maincontents = Ext.ComponentQuery.query('#maincontents')[0];",
+                    "maincontents.setActiveItem(3);"
+                ],
+                "url": "accepted"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "url": "string"
+            },
+            "name": "goAccepted",
+            "designerId": "6b8c1435-ef16-46b0-a687-2180a2efd399"
+        },
+        {
+            "type": "Ext.route.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "goOrdered",
+                "implHandler": [
+                    "var maincontents = Ext.ComponentQuery.query('#maincontents')[0];",
+                    "        maincontents.setActiveItem(1);"
+                ],
+                "url": "ordered"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "url": "string"
+            },
+            "name": "goOrdered",
+            "designerId": "cdc1e541-b421-470f-9481-7b245ae55734"
+        },
+        {
+            "type": "Ext.route.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "goTop",
+                "implHandler": [
+                    "var maincontents = Ext.ComponentQuery.query('#maincontents')[0];",
+                    "        maincontents.setActiveItem(4);"
+                ],
+                "url": "top"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "url": "string"
+            },
+            "name": "goTop",
+            "designerId": "1c8bd86f-cd6f-437d-a2fc-4bed5d3d3b7a"
+        }
+    ]
+}

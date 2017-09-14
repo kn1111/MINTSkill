@@ -17,23 +17,38 @@ Ext.define('QuickStart.model.Quest', {
     extend: 'Ext.data.Model',
 
     requires: [
-        'Ext.data.field.Integer'
+        'Ext.data.field.Integer',
+        'Ext.data.field.Boolean'
     ],
 
 
     fields: [
         {
-            name: 'name'
+            name: 'requester'
         },
         {
-            name: 'item'
+            name: 'missionContent'
         },
         {
             type: 'int',
             convert: function(v, rec) {
                 return v + " leaf";
             },
-            name: 'reward'
+            name: 'compensation'
+        },
+        {
+            name: 'number'
+        },
+        {
+            type: 'boolean',
+            name: 'acceptance'
+        },
+        {
+            name: 'contractor'
+        },
+        {
+            type: 'boolean',
+            name: 'complete'
         }
     ]
 

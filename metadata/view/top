@@ -1,0 +1,91 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "top",
+        "designer|userClassName": "top",
+        "itemId": "top"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "html": "string",
+        "itemId": "string"
+    },
+    "name": "MyContainer4",
+    "designerId": "5a546083-acbe-4358-ac49-fbbccde0ae93",
+    "viewControllerInstanceId": "dcba5036-a021-4bea-800b-78a67e1a5e3b",
+    "viewModelInstanceId": "8b792689-ecee-4f62-bb11-3fdddc71fe7b",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 338,
+                "title": "TOP",
+                "titleAlign": "center"
+            },
+            "configAlternates": {
+                "title": "string",
+                "titleAlign": "string",
+                "height": "auto"
+            },
+            "name": "MyPanel",
+            "designerId": "3edc3c68-caca-4c29-a319-04d65c45a0b9",
+            "cn": [
+                {
+                    "type": "Ext.dataview.DataView",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 43,
+                        "store": "LeafStore",
+                        "style": [
+                            "{'font-size': '15px'}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "style": "object",
+                        "height": "auto",
+                        "store": "store"
+                    },
+                    "name": "MyDataView",
+                    "designerId": "7bd6b8ac-8ed1-4e82-a799-3d58da92d0a4",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "itemTpl",
+                                "implHandler": [
+                                    "<tpl><div>{Name}さんの現在の保有リーフは {Amount}です。</div></tpl>"
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|displayName": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "itemTpl",
+                            "designerId": "e626c6bf-9551-44c4-b90b-e42c49d933dd"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

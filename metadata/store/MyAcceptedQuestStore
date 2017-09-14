@@ -1,0 +1,64 @@
+{
+    "type": "Ext.data.ChainedStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyAcceptedQuestStore",
+        "source": "QuestStore",
+        "storeId": "MyAcceptedQuestStore"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "source": "store",
+        "storeId": "string"
+    },
+    "name": "MyChainedStore",
+    "designerId": "2911938f-d5ec-4f7e-9828-c5b5292267bc",
+    "cn": [
+        {
+            "type": "Ext.util.Filter",
+            "reference": {
+                "name": "filters",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyFilter1",
+            "designerId": "93d63723-155b-4030-9008-eba0af8ed8a3",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "item"
+                        ],
+                        "fn": "filterFn",
+                        "implHandler": [
+                            "var contractor = item.data.contractor;",
+                            "",
+                            "if( contractor == \"a\"){",
+                            "    return true;",
+                            "}else{",
+                            "    return false;",
+                            "}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "designer|params": "typedarray",
+                        "fn": "string",
+                        "implHandler": "code"
+                    },
+                    "name": "filterFn",
+                    "designerId": "cc1f1d24-8a79-478a-a789-87b82598048e"
+                }
+            ]
+        }
+    ]
+}
