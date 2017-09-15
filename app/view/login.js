@@ -42,18 +42,24 @@ Ext.define('QuickStart.view.login', {
                     xtype: 'label',
                     style: 'font-size: 20px',
                     html: 'ログイン画面',
+                    margin: '0 0 0 10',
                     padding: '0 0 10 0'
                 },
                 {
                     xtype: 'textfield',
+                    margin: '0 0 0 10',
+                    maxWidth: 300,
                     label: 'ユーザーID'
                 },
                 {
                     xtype: 'textfield',
+                    margin: '0 0 0 10',
+                    maxWidth: 300,
                     label: 'パスワード'
                 },
                 {
                     xtype: 'button',
+                    margin: '0 0 0 10',
                     text: 'ログイン',
                     listeners: {
                         tap: 'onButtonTap'

@@ -72,6 +72,8 @@ Ext.define('QuickStart.view.orderViewController', {
                 // Ext.Msg.alert('Error', 'POST Error');
 
             }});
+            this.redirectTo('top');
+
 
 
     }

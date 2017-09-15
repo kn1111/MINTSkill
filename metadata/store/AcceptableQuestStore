@@ -44,9 +44,12 @@
                         "fn": "filterFn",
                         "implHandler": [
                             "var acceptance = item.data.acceptance;",
+                            "var requester = item.data.requester;",
                             "",
                             "if( acceptance === false){",
+                            "if(requester != \"a\"){",
                             "    return true;",
+                            "}",
                             "}else{",
                             "    return false;",
                             "}"

@@ -45,9 +45,6 @@ Ext.define('QuickStart.model.GroupPerchase', {
             name: 'complete'
         },
         {
-            convert: function(v, rec) {
-                return v.length();
-            },
             mapping: function(data) {
                 return data.contractores;
             },

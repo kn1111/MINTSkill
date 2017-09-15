@@ -42,9 +42,11 @@
                         "fn": "filterFn",
                         "implHandler": [
                             "var requester = item.data.requester;",
-                            "",
+                            "var complete = item.data.complete;",
                             "if(requester == \"a\"){",
+                            "if(complete === false){",
                             "    return true;",
+                            "}",
                             "}else{",
                             "    return false;",
                             "}"

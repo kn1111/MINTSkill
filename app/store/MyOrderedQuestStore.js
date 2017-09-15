@@ -29,9 +29,11 @@ Ext.define('QuickStart.store.MyOrderedQuestStore', {
             filters: {
                 filterFn: function(item) {
                     var requester = item.data.requester;
-
+                    var complete = item.data.complete;
                     if(requester == "a"){
-                        return true;
+                        if(complete === false){
+                            return true;
+                        }
                     }else{
                         return false;
                     }

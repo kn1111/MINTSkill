@@ -152,31 +152,6 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|params": [
-                            "v",
-                            "rec"
-                        ],
-                        "fn": "convert",
-                        "implHandler": [
-                            "return v.length();"
-                        ]
-                    },
-                    "configAlternates": {
-                        "designer|params": "typedarray",
-                        "fn": "string",
-                        "implHandler": "code"
-                    },
-                    "name": "convert",
-                    "designerId": "c8ec6841-c146-40b5-9a20-803971a9010e"
-                },
-                {
-                    "type": "fixedfunction",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|params": [
                             "data"
                         ],
                         "fn": "mapping",

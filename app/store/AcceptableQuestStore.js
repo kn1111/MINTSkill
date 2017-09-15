@@ -30,9 +30,12 @@ Ext.define('QuickStart.store.AcceptableQuestStore', {
             filters: {
                 filterFn: function(item) {
                     var acceptance = item.data.acceptance;
+                    var requester = item.data.requester;
 
                     if( acceptance === false){
-                        return true;
+                        if(requester != "a"){
+                            return true;
+                        }
                     }else{
                         return false;
                     }

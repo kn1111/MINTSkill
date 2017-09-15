@@ -50,6 +50,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "html": "ログイン画面",
+                        "margin": "0 0 0 10",
                         "padding": "0 0 10 0",
                         "style": [
                             "'font-size: 20px'",
@@ -59,7 +60,8 @@
                     "configAlternates": {
                         "style": "object",
                         "html": "string",
-                        "padding": "auto"
+                        "padding": "auto",
+                        "margin": "auto"
                     },
                     "name": "MyLabel1",
                     "designerId": "62e82678-3ab6-40a9-9e74-954421a28c95"
@@ -72,10 +74,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "ユーザーID"
+                        "label": "ユーザーID",
+                        "margin": "0 0 0 10",
+                        "maxWidth": 300
                     },
                     "configAlternates": {
-                        "label": "string"
+                        "label": "string",
+                        "margin": "auto",
+                        "maxWidth": "auto"
                     },
                     "name": "MyTextField3",
                     "designerId": "7269878a-8129-4820-8ccd-3456e162c11f"
@@ -88,10 +94,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "パスワード"
+                        "label": "パスワード",
+                        "margin": "0 0 0 10",
+                        "maxWidth": 300
                     },
                     "configAlternates": {
-                        "label": "string"
+                        "label": "string",
+                        "margin": "auto",
+                        "maxWidth": "auto"
                     },
                     "name": "MyTextField4",
                     "designerId": "c0a19455-cd16-413b-a4c3-8f49540e2bde"
@@ -104,10 +114,12 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "margin": "0 0 0 10",
                         "text": "ログイン"
                     },
                     "configAlternates": {
-                        "text": "string"
+                        "text": "string",
+                        "margin": "auto"
                     },
                     "name": "MyButton4",
                     "designerId": "c1e83566-aca1-431f-9dce-0d180464255e",
