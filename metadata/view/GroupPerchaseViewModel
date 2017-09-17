@@ -6,13 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "maintabpanel1",
-        "designer|userClassName": "MainTabPanelViewModel1"
+        "designer|userAlias": "groupperchase",
+        "designer|userClassName": "GroupPerchaseViewModel"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "name": "MainTabPanelViewModel1",
-    "designerId": "cff41bc7-0b03-4184-a9a9-da8933b0cff4"
+    "designerId": "8de0b9e4-1029-4a3b-9d97-6f1c14d8934b"
 }

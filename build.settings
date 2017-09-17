@@ -2,6 +2,6 @@
     "webBuild": {
         "environment": "production",
         "clean": "on",
-        "publishPath": "C:\\SPA\\BuildTest"
+        "publishPath": "G:\\SPA"
     }
 }

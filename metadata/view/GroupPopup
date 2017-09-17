@@ -1,0 +1,692 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": true,
+        "designer|userAlias": "grouppopup",
+        "designer|userClassName": "GroupPopup",
+        "floating": true,
+        "modal": true,
+        "title": "確認",
+        "width": 376
+    },
+    "configAlternates": {
+        "floating": "boolean",
+        "centered": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "QuestAcceptPopup1",
+    "designerId": "f9489bfa-11ff-40fd-83d7-a4e34fb8f62c",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "floating",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "4202966b-39a3-4521-a87d-289b7028f0c6",
+    "viewModelInstanceId": "dd45abde-f4ad-49d1-8725-8ba2ddf5e531",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyContainer8",
+            "designerId": "b7d656eb-1a54-4530-a0fa-b0f713c14f37",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 41,
+                        "html": "以下の共同購入に参加しますか？<br>目標人数に達したら、leafが提案者に振り込まれます。",
+                        "margin": 10
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "html": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "644a47de-7f61-4a33-8d1f-9110ddbdc0a8"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bind": [
+                            "{quest.requester}"
+                        ],
+                        "clearable": false,
+                        "editable": false,
+                        "label": "提案者",
+                        "margin": "0 10 0 10",
+                        "name": "name"
+                    },
+                    "configAlternates": {
+                        "bind": "object",
+                        "label": "string",
+                        "name": "string",
+                        "editable": "boolean",
+                        "clearable": "boolean",
+                        "margin": "auto"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "e56d1347-feca-45bf-893b-0c611c0966f6"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bind": [
+                            "{quest.wish}"
+                        ],
+                        "clearable": false,
+                        "editable": false,
+                        "label": "目的",
+                        "margin": "0 10 0 10",
+                        "name": "item"
+                    },
+                    "configAlternates": {
+                        "bind": "object",
+                        "label": "string",
+                        "name": "string",
+                        "editable": "boolean",
+                        "clearable": "boolean",
+                        "margin": "auto"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "fe79467b-703e-4fa8-9abc-088dc2e53297"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bind": [
+                            "{quest.perchase}"
+                        ],
+                        "clearable": false,
+                        "editable": false,
+                        "label": "参加費",
+                        "margin": "0 10 0 10",
+                        "name": "reward"
+                    },
+                    "configAlternates": {
+                        "bind": "object",
+                        "label": "string",
+                        "name": "string",
+                        "editable": "boolean",
+                        "clearable": "boolean",
+                        "margin": "auto"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "02d5c4fc-10c6-4408-a75e-ba6dccc097d3"
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "bottom"
+                    },
+                    "configAlternates": {
+                        "docked": "string"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "da30e7bb-2152-463a-aae2-4ee9d27fb0d2",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "iconCls": "x-fa fa-check",
+                                "text": "受注"
+                            },
+                            "configAlternates": {
+                                "iconCls": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton",
+                            "designerId": "c1c07826-f2af-4ba4-97fa-19c0dea4ef61",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "submitUpdate",
+                                        "implHandler": [
+                                            "var view = this.getView();",
+                                            "var record = view.config.record;",
+                                            "var tokenStore = Ext.getStore('UserDataStore');",
+                                            "var groupstore = Ext.getStore('GroupPerchaseStore');",
+                                            "var leafstore = Ext.getStore('LeafStore');",
+                                            "var token = tokenStore.getData().items[\"0\"].data.token;",
+                                            "var username = tokenStore.getData().items[\"0\"].data.username;",
+                                            "var obj = {\"peers\": [\"13.113.98.75:7051\"],\"fcn\":\"receive\",\"args\":[record.number,username]};",
+                                            "",
+                                            "var authorization = 'Bearer '+token;",
+                                            "//Encode Data",
+                                            "var data = Ext.JSON.encode(obj);",
+                                            "",
+                                            "//Post Data",
+                                            "Ext.Ajax.request({",
+                                            "    url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc3', // url : this.getUrl(),",
+                                            "    method : \"POST\",",
+                                            "    headers: {",
+                                            "        'authorization': authorization,",
+                                            "        'Content-Type': 'application/json'",
+                                            "    },",
+                                            "    params : data,",
+                                            "    useDefaultXhrHeader : false,",
+                                            "",
+                                            "    success : function(response) {",
+                                            "",
+                                            "                Ext.Ajax.request({",
+                                            "                    url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc1?peer=peer1&fcn=rangeTest&args=%5B%22a%22%5D', // url : this.getUrl(),",
+                                            "                    method : \"GET\",",
+                                            "                    headers: {",
+                                            "                        'Content-Type': 'application/json',",
+                                            "                        'Authorization': authorization",
+                                            "                    },",
+                                            "",
+                                            "                    success : function(response) {",
+                                            "                        var jsonLeafData = response.responseText;",
+                                            "                        var loadLeafData = JSON.parse(jsonLeafData);",
+                                            "                        leafstore.setData(loadLeafData);",
+                                            "",
+                                            "                    Ext.Ajax.request({",
+                                            "                    url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc3?peer=peer1&fcn=query&args=%5B%22a%22%5D', // url : this.getUrl(),",
+                                            "                    method : \"GET\",",
+                                            "                    headers: {",
+                                            "                        'Content-Type': 'application/json',",
+                                            "                        'Authorization': authorization",
+                                            "                    },",
+                                            "                    success : function(response) {",
+                                            "                        var jsonGroupData = response.responseText;",
+                                            "                        var loadGroupData = JSON.parse(jsonGroupData);",
+                                            "                        groupstore.setData(loadGroupData);",
+                                            "                        console.log(groupstore);",
+                                            "                        Ext.Msg.alert('Success', '共同購入に参加しました。');",
+                                            "                    },failure : function(response) {",
+                                            "                         Ext.Msg.alert('Error', '通信失敗');",
+                                            "                    }",
+                                            "                });",
+                                            "                    },failure : function(response) {",
+                                            "                         Ext.Msg.alert('Error', '通信失敗');",
+                                            "                    }",
+                                            "",
+                                            " });",
+                                            "    },",
+                                            "    failure : function(response) {",
+                                            "        Ext.Msg.alert('Error', 'POST Error');",
+                                            "    }});",
+                                            "view.destroy();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "submitUpdate",
+                                    "designerId": "800a6062-c6e2-4021-85c5-aabff7465960"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "iconCls": "x-fa fa-close",
+                                "text": "キャンセル"
+                            },
+                            "configAlternates": {
+                                "iconCls": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "6731ce88-ae1b-453b-adeb-7837c47da4be",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "cancelUpdate",
+                                        "implHandler": [
+                                            "var view = this.getView();",
+                                            "    view.destroy();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "cancelUpdate",
+                                    "designerId": "58551bb5-e04b-46aa-b755-a5fd019b3554"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onContainerInitialize",
+                        "implHandler": [
+                            "var view = this.getView();",
+                            "    record = view.config.record;",
+                            "",
+                            "if(record.requester == \"a\" ){",
+                            "    component.hide();",
+                            "  }"
+                        ],
+                        "name": "initialize",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onContainerInitialize",
+                    "designerId": "8fc4c18b-8b69-4a21-b09b-ef9150cf5743"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyContainer10",
+            "designerId": "81658819-86d1-447d-84df-1ff8f9213472",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 40,
+                        "html": "以下の共同購入の募集を停止しますか？",
+                        "margin": 10
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "html": "string",
+                        "margin": "auto"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "539293cb-7457-4ccd-9650-caf7c5902548"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bind": [
+                            "{quest.wish}"
+                        ],
+                        "clearable": false,
+                        "editable": false,
+                        "label": "目的",
+                        "margin": "0 10 0 10",
+                        "name": "wish"
+                    },
+                    "configAlternates": {
+                        "bind": "object",
+                        "label": "string",
+                        "name": "string",
+                        "editable": "boolean",
+                        "clearable": "boolean",
+                        "margin": "auto"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "38ac17bd-55f2-4dbd-a266-81fd32afa017"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bind": [
+                            "{quest.price}"
+                        ],
+                        "label": "目標金額",
+                        "margin": "0 10 0 10",
+                        "name": "price"
+                    },
+                    "configAlternates": {
+                        "bind": "object",
+                        "label": "string",
+                        "margin": "auto",
+                        "name": "string"
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "0863ef96-7f56-4245-a06c-ce52d9635a5b"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bind": [
+                            "{quest.fund}"
+                        ],
+                        "clearable": false,
+                        "editable": false,
+                        "label": "募集人数",
+                        "margin": "0 10 0 10",
+                        "name": "fund"
+                    },
+                    "configAlternates": {
+                        "bind": "object",
+                        "label": "string",
+                        "name": "string",
+                        "editable": "boolean",
+                        "clearable": "boolean",
+                        "margin": "auto"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "30309108-ceda-4556-ba0f-70b946b2438d"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bind": [
+                            "{quest.contructores}"
+                        ],
+                        "label": "参加者",
+                        "margin": "0 10 0 10",
+                        "name": "contructores"
+                    },
+                    "configAlternates": {
+                        "bind": "object",
+                        "label": "string",
+                        "margin": "auto",
+                        "name": "string"
+                    },
+                    "name": "MyTextField5",
+                    "designerId": "5030ff4e-4a5d-4957-ac94-d5824d3e36ba"
+                },
+                {
+                    "type": "Ext.Toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "bottom"
+                    },
+                    "configAlternates": {
+                        "docked": "string"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "9e6f9ab2-23a3-4a0e-a204-eb99639369cc",
+                    "cn": [
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "iconCls": "x-fa fa-check",
+                                "text": "取り消し"
+                            },
+                            "configAlternates": {
+                                "iconCls": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton",
+                            "designerId": "c93e17cc-4481-4697-b560-276c9f524623",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "submitUpdate1",
+                                        "implHandler": [
+                                            "var view = this.getView();",
+                                            "var record = view.config.record;",
+                                            "var tokenStore = Ext.getStore('UserDataStore');",
+                                            "var groupstore = Ext.getStore('GroupPerchaseStore');",
+                                            "var leafstore = Ext.getStore('LeafStore');",
+                                            "var token = tokenStore.getData().items[\"0\"].data.token;",
+                                            "var obj = {\"peers\": [\"13.113.98.75:7051\"],\"fcn\":\"delete\",\"args\":[record.number]};",
+                                            "",
+                                            "var authorization = 'Bearer '+token;",
+                                            "//Encode Data",
+                                            "var data = Ext.JSON.encode(obj);",
+                                            "",
+                                            "//Post Data",
+                                            "Ext.Ajax.request({",
+                                            "    url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc3', // url : this.getUrl(),",
+                                            "    method : \"POST\",",
+                                            "    headers: {",
+                                            "        'authorization': authorization,",
+                                            "        'Content-Type': 'application/json'",
+                                            "    },",
+                                            "    params : data,",
+                                            "    useDefaultXhrHeader : false,",
+                                            "",
+                                            "    success : function(response) {",
+                                            "",
+                                            "                Ext.Ajax.request({",
+                                            "                    url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc1?peer=peer1&fcn=rangeTest&args=%5B%22a%22%5D', // url : this.getUrl(),",
+                                            "                    method : \"GET\",",
+                                            "                    headers: {",
+                                            "                        'Content-Type': 'application/json',",
+                                            "                        'Authorization': authorization",
+                                            "                    },",
+                                            "",
+                                            "                    success : function(response) {",
+                                            "                        var jsonLeafData = response.responseText;",
+                                            "                        var loadLeafData = JSON.parse(jsonLeafData);",
+                                            "                        leafstore.setData(loadLeafData);",
+                                            "",
+                                            "                    Ext.Ajax.request({",
+                                            "                    url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc3?peer=peer1&fcn=query&args=%5B%22a%22%5D', // url : this.getUrl(),",
+                                            "                    method : \"GET\",",
+                                            "                    headers: {",
+                                            "                        'Content-Type': 'application/json',",
+                                            "                        'Authorization': authorization",
+                                            "                    },",
+                                            "                    success : function(response) {",
+                                            "                        var jsonGroupData = response.responseText;",
+                                            "                        var loadGroupData = JSON.parse(jsonGroupData);",
+                                            "                        groupstore.setData(loadGroupData);",
+                                            "                        console.log(groupstore);",
+                                            "                        Ext.Msg.alert('Success', '共同購入の募集を取り消しました。');",
+                                            "                    },failure : function(response) {",
+                                            "                         Ext.Msg.alert('Error', '通信失敗');",
+                                            "                    }",
+                                            "                });",
+                                            "                    },failure : function(response) {",
+                                            "                         Ext.Msg.alert('Error', '通信失敗');",
+                                            "                    }",
+                                            "",
+                                            " });",
+                                            "    },",
+                                            "    failure : function(response) {",
+                                            "        Ext.Msg.alert('Error', 'POST Error');",
+                                            "    }});",
+                                            "view.destroy();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "submitUpdate1",
+                                    "designerId": "bb146199-0916-4880-b710-38cdae2b3a08"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "iconCls": "x-fa fa-close",
+                                "text": "キャンセル"
+                            },
+                            "configAlternates": {
+                                "iconCls": "string",
+                                "text": "string"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "ac5b5ed1-e89b-4e4f-9bdf-f47942e2ce38",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "cancelUpdate1",
+                                        "implHandler": [
+                                            "var view = this.getView();",
+                                            "    view.destroy();"
+                                        ],
+                                        "name": "tap",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "cancelUpdate1",
+                                    "designerId": "c35d31e0-6086-4640-b97b-3c20a47a3066"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onContainerInitialize1",
+                        "implHandler": [
+                            "var view = this.getView();",
+                            "    record = view.config.record;",
+                            "",
+                            "if(record.requester != \"a\" ){",
+                            "    component.hide();",
+                            "  }"
+                        ],
+                        "name": "initialize",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onContainerInitialize1",
+                    "designerId": "b6af9e34-82a6-4830-afa8-77e1a7f5b9b9"
+                }
+            ]
+        }
+    ]
+}

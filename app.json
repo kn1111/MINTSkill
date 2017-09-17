@@ -1,5 +1,6 @@
 {
    "name": "QuickStart",
+   "namespace": "QuickStart",
    "version": "1.0.0.0",
    "framework": "ext",
    "toolkit": "modern",
@@ -15,6 +16,7 @@
       "overrides"
    ],
    "fashion": {
+      "missingParameters": "error",
       "inliner": {
          "enable": false
       }
@@ -116,5 +118,5 @@
    "ignore": [
       "(^|/)CVS(/?$|/.*?$)"
    ],
-   "id": "5d9315e0-8143-415a-84c6-1181b6194d46"
+   "id": "51e6987f-afa0-42ac-b98b-83c9fa5211c3"
 }

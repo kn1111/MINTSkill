@@ -200,6 +200,28 @@
                     "name": "top1",
                     "designerId": "af8b49c0-38b8-4574-8c8c-91a19c3b3f31",
                     "masterInstanceId": "5a546083-acbe-4358-ac49-fbbccde0ae93"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "groupperchase",
+                    "designerId": "49d72b4b-9757-4938-bcac-fe3c22873671",
+                    "masterInstanceId": "51a85144-0398-4385-a9fb-d5e1d6b58bfd"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "grouporder1",
+                    "designerId": "a66e3fd1-99a0-40bf-bf1b-bc9550a10d9c",
+                    "masterInstanceId": "1dee6ffc-5d37-4b0c-ada0-4482ef0460d5"
                 }
             ]
         }

@@ -6,13 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "maintabpanel1",
-        "designer|userClassName": "MainTabPanelViewController1"
+        "designer|userAlias": "groupperchase",
+        "designer|userClassName": "GroupPerchaseViewController"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "name": "MainTabPanelViewController1",
-    "designerId": "0e5e4db3-5a79-4814-a227-9256de4955f5"
+    "designerId": "ae46354b-f562-43d1-a652-b69d99ca27b4"
 }

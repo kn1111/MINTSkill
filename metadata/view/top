@@ -42,6 +42,28 @@
             "designerId": "3edc3c68-caca-4c29-a319-04d65c45a0b9",
             "cn": [
                 {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 39,
+                        "html": "参加者全員の保有leafを表示しています。",
+                        "style": [
+                            "{'font-size': '15px'}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "style": "object",
+                        "height": "auto",
+                        "html": "string"
+                    },
+                    "name": "MyContainer2",
+                    "designerId": "5f61117f-b4e0-4218-a4d6-fc6ae7d19ebe"
+                },
+                {
                     "type": "Ext.dataview.DataView",
                     "reference": {
                         "name": "items",
@@ -49,7 +71,6 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "height": 43,
                         "store": "LeafStore",
                         "style": [
                             "{'font-size': '15px'}"
@@ -73,7 +94,7 @@
                             "userConfig": {
                                 "designer|displayName": "itemTpl",
                                 "implHandler": [
-                                    "<tpl><div>{Name}さんの現在の保有リーフは {Amount}です。</div></tpl>"
+                                    "<tpl><div>{Key}さんの現在の保有leafは {Record}です。</div></tpl>"
                                 ]
                             },
                             "configAlternates": {

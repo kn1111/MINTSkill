@@ -149,6 +149,7 @@
                 "clearable": false,
                 "editable": false,
                 "label": "受注者",
+                "margin": "0 10 0 10",
                 "name": "name"
             },
             "configAlternates": {
@@ -156,7 +157,8 @@
                 "label": "string",
                 "name": "string",
                 "editable": "boolean",
-                "clearable": "boolean"
+                "clearable": "boolean",
+                "margin": "auto"
             },
             "name": "MyTextField",
             "designerId": "3496cc16-5df1-4bb7-8607-b637f86c7804"
@@ -175,6 +177,7 @@
                 "clearable": false,
                 "editable": false,
                 "label": "依頼内容",
+                "margin": "0 10 0 10",
                 "name": "item"
             },
             "configAlternates": {
@@ -182,7 +185,8 @@
                 "label": "string",
                 "name": "string",
                 "editable": "boolean",
-                "clearable": "boolean"
+                "clearable": "boolean",
+                "margin": "auto"
             },
             "name": "MyTextField1",
             "designerId": "27b96fce-8c7e-40ca-bcef-38da8eecd6f7"
@@ -201,6 +205,7 @@
                 "clearable": false,
                 "editable": false,
                 "label": "報酬",
+                "margin": "0 10 0 10",
                 "name": "reward"
             },
             "configAlternates": {
@@ -208,7 +213,8 @@
                 "label": "string",
                 "name": "string",
                 "editable": "boolean",
-                "clearable": "boolean"
+                "clearable": "boolean",
+                "margin": "auto"
             },
             "name": "MyTextField2",
             "designerId": "9de52ba5-7a5f-4cf5-bc43-952db71b0906"
@@ -298,16 +304,10 @@
                                     "                console.log(loadData);",
                                     "                queststore.setData(loadData);",
                                     "                console.log(queststore);",
-                                    "                Ext.Msg.alert('Success', contractor+'さんに報酬'+compensation+' leafを払いました。',function()",
-                                    "{",
-                                    "   //action to complete when user clicks ok.",
-                                    "});",
+                                    "                Ext.Msg.alert('Success', contractor+'さんに報酬'+compensation+' leafを払いました。');",
                                     "            },",
                                     "            failure : function(response) {",
-                                    "                Ext.Msg.alert('Error', '通信失敗',function()",
-                                    "{",
-                                    "   //action to complete when user clicks ok.",
-                                    "});}",
+                                    "                Ext.Msg.alert('Error', '通信失敗');}",
                                     "        });",
                                     "",
                                     "",

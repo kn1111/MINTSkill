@@ -3,18 +3,18 @@
     "settings": {
         "cmd": {
             "license": "commercial",
-            "cmdVersion": "6.5.0.180",
+            "cmdVersion": "6.5.1.240",
             "frameworkVersion": "6.5.0.775"
         },
-        "urlPrefix": "http://localhost:62217/",
+        "urlPrefix": "http://localhost:54472/",
         "canvasControls": {
             "viewportSize": {
-                "name": "iPhone 5",
+                "name": "Desktop (Auto Expand)",
                 "builtIn": true,
-                "height": 568,
-                "width": 320
+                "height": null,
+                "width": null
             },
-            "viewportOrientation": "landscape"
+            "viewportOrientation": "portrait"
         },
         "exportPath": "C:/SPA/MINT/",
         "urlPrefixTemplate": "http://localhost:{port}/{path}",
@@ -26,20 +26,23 @@
         "buildShouldOverwriteIndex": true,
         "generateArchitectVersion": true
     },
-    "xdsVersion": "4.2.0",
-    "xdsBuild": 205,
+    "xdsVersion": "4.2.2",
+    "xdsBuild": 282,
     "schemaVersion": 1,
     "upgradeVersion": 310000000001,
     "framework": "modern65",
     "viewOrderMap": {
         "view": [
             "95a48823-0aee-4fc1-a05c-1c7a9d5fe3e8",
+            "f9489bfa-11ff-40fd-83d7-a4e34fb8f62c",
             "0abffcce-10f8-40ab-8383-633a4d0a73d8",
             "901df8c0-496c-47e7-8154-4448982af139",
             "721e40c0-7991-46f4-b336-9ae5d8c3c435",
+            "dd45abde-f4ad-49d1-8725-8ba2ddf5e531",
             "a4363dfd-949b-47b7-8587-faa8a6a97230",
             "bf89ae32-300b-4644-8381-bbcc53b3abe8",
             "b7693b03-654d-414e-81e3-3dd49e7701b4",
+            "4202966b-39a3-4521-a87d-289b7028f0c6",
             "395c7d84-affe-4769-9056-4a87386ac5a1",
             "64746fe0-bfc8-4703-891d-8b87eb742bfa",
             "2ae02145-ad47-43d1-9ebf-37c75a63b7a8",
@@ -58,8 +61,11 @@
             "85eb98d8-41b9-4cc6-9a6c-9baafe72c75b",
             "5fd1e2b4-3c3b-4c5d-8834-25e320a61581",
             "88acf63c-a629-412c-aef8-be6e4edc1d8a",
+            "1dee6ffc-5d37-4b0c-ada0-4482ef0460d5",
             "ee1be1e6-3306-47b5-9698-eb31346ebd9f",
+            "5bd0e101-06a9-4e51-8f4b-211b99fcf378",
             "6b2b0a97-8775-4708-906a-6764e74d0c37",
+            "c537ce7f-b7a4-4e4d-9543-71c3f2e8fca3",
             "5a546083-acbe-4358-ac49-fbbccde0ae93",
             "8b792689-ecee-4f62-bb11-3fdddc71fe7b",
             "dcba5036-a021-4bea-800b-78a67e1a5e3b",

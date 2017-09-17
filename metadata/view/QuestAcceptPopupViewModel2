@@ -6,12 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "grouppurchase",
-        "designer|userClassName": "GroupPurchaseViewModel"
+        "designer|userAlias": "grouppopup",
+        "designer|userClassName": "QuestAcceptPopupViewModel2"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "designerId": "8de0b9e4-1029-4a3b-9d97-6f1c14d8934b"
+    "name": "QuestAcceptPopupViewModel2",
+    "designerId": "dd45abde-f4ad-49d1-8725-8ba2ddf5e531"
 }

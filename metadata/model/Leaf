@@ -22,7 +22,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "Amount"
+                "name": "Record"
             },
             "configAlternates": {
                 "name": "string"
@@ -38,7 +38,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "Name"
+                "name": "Key"
             },
             "configAlternates": {
                 "name": "string"

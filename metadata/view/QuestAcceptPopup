@@ -66,6 +66,7 @@
                 "clearable": false,
                 "editable": false,
                 "label": "依頼者",
+                "margin": "0 10 0 10",
                 "name": "name"
             },
             "configAlternates": {
@@ -73,7 +74,8 @@
                 "label": "string",
                 "name": "string",
                 "editable": "boolean",
-                "clearable": "boolean"
+                "clearable": "boolean",
+                "margin": "auto"
             },
             "name": "MyTextField",
             "designerId": "16d9197d-c9b3-4dcd-987c-54f6e6159a51"
@@ -92,6 +94,7 @@
                 "clearable": false,
                 "editable": false,
                 "label": "依頼内容",
+                "margin": "0 10 0 10",
                 "name": "item"
             },
             "configAlternates": {
@@ -99,7 +102,8 @@
                 "label": "string",
                 "name": "string",
                 "editable": "boolean",
-                "clearable": "boolean"
+                "clearable": "boolean",
+                "margin": "auto"
             },
             "name": "MyTextField1",
             "designerId": "8bf1ac5a-4471-4bd3-bf1b-d833e12f24bd"
@@ -118,6 +122,7 @@
                 "clearable": false,
                 "editable": false,
                 "label": "報酬",
+                "margin": "0 10 0 10",
                 "name": "reward"
             },
             "configAlternates": {
@@ -125,7 +130,8 @@
                 "label": "string",
                 "name": "string",
                 "editable": "boolean",
-                "clearable": "boolean"
+                "clearable": "boolean",
+                "margin": "auto"
             },
             "name": "MyTextField2",
             "designerId": "50fd10c3-08d1-4d16-8dac-9b98fcd09359"
@@ -216,14 +222,14 @@
                                     "                Ext.Msg.alert('Success', 'クエストを受注しました。');",
                                     "            },",
                                     "            failure : function(response) {",
-                                    "                // Ext.Msg.alert('Error', '通信失敗');",
+                                    "                 Ext.Msg.alert('Error', '通信失敗');",
                                     "            }",
                                     "        });",
                                     "",
                                     "",
                                     "    },",
                                     "    failure : function(response) {",
-                                    "        //Ext.Msg.alert('Error', 'POST Error');",
+                                    "        Ext.Msg.alert('Error', 'POST Error');",
                                     "    }});",
                                     "view.destroy();"
                                 ],

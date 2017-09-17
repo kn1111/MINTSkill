@@ -115,6 +115,42 @@
             },
             "name": "MyMenuItem3",
             "designerId": "ff085d67-fbd3-4f40-b14b-d7c6cb0eea06"
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "href": "#group",
+                "text": "共同購入一覧"
+            },
+            "configAlternates": {
+                "href": "string",
+                "text": "string"
+            },
+            "name": "MyMenuItem5",
+            "designerId": "5b3614cf-bb8c-4907-9efa-e2ac28c9774b"
+        },
+        {
+            "type": "Ext.menu.Item",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "href": "#groupperchase",
+                "text": "共同購入募集"
+            },
+            "configAlternates": {
+                "href": "string",
+                "text": "string"
+            },
+            "name": "MyMenuItem6",
+            "designerId": "ee9f63dc-d1da-4413-9088-28fb43c15ffa"
         }
     ]
 }

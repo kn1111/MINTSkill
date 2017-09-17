@@ -67,6 +67,7 @@
                 "clearable": false,
                 "editable": false,
                 "label": "依頼者",
+                "margin": "0 10 0 10",
                 "name": "name"
             },
             "configAlternates": {
@@ -74,7 +75,8 @@
                 "label": "string",
                 "name": "string",
                 "editable": "boolean",
-                "clearable": "boolean"
+                "clearable": "boolean",
+                "margin": "auto"
             },
             "name": "MyTextField",
             "designerId": "1fe5813e-53bd-4942-b1ce-ca9fef1aa726"
@@ -93,6 +95,7 @@
                 "clearable": false,
                 "editable": false,
                 "label": "依頼内容",
+                "margin": "0 10 0 10",
                 "name": "item"
             },
             "configAlternates": {
@@ -100,7 +103,8 @@
                 "label": "string",
                 "name": "string",
                 "editable": "boolean",
-                "clearable": "boolean"
+                "clearable": "boolean",
+                "margin": "auto"
             },
             "name": "MyTextField1",
             "designerId": "a5612f19-879b-46f5-b316-3a59a99d5d51"
@@ -119,6 +123,7 @@
                 "clearable": false,
                 "editable": false,
                 "label": "報酬",
+                "margin": "0 10 0 10",
                 "name": "reward"
             },
             "configAlternates": {
@@ -126,7 +131,8 @@
                 "label": "string",
                 "name": "string",
                 "editable": "boolean",
-                "clearable": "boolean"
+                "clearable": "boolean",
+                "margin": "auto"
             },
             "name": "MyTextField2",
             "designerId": "7db8d4bc-0234-435c-8a50-c040883d28da"
@@ -215,16 +221,16 @@
                                     "                console.log(loadData);",
                                     "                queststore.setData(loadData);",
                                     "                console.log(queststore);",
-                                    "                // Ext.Msg.alert('Success', 'クエストをキャンセルしました。');",
+                                    "                 Ext.Msg.alert('Success', 'クエストをキャンセルしました。');",
                                     "            },",
                                     "            failure : function(response) {",
-                                    "                //Ext.Msg.alert('Error', '通信失敗');",
+                                    "                Ext.Msg.alert('Error', '通信失敗');",
                                     "            }",
                                     "        });",
                                     "",
                                     "    },",
                                     "    failure : function(response) {",
-                                    "        //Ext.Msg.alert('Error', 'POST Error');",
+                                    "        Ext.Msg.alert('Error', 'POST Error');",
                                     "    }});",
                                     "view.destroy();"
                                 ],

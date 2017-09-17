@@ -61,7 +61,7 @@
                 "width": "auto"
             },
             "name": "MyColumn",
-            "designerId": "cdb599ad-7979-41ce-b561-377cf511d583",
+            "designerId": "6dfded0f-2914-475e-a6de-da0216423e6e",
             "customConfigs": [
                 {
                     "group": "(Custom Properties)",
@@ -92,7 +92,7 @@
                 "width": "auto"
             },
             "name": "MyColumn1",
-            "designerId": "8590c720-8807-4bd1-b4c2-36be6d356c52",
+            "designerId": "1360274e-63b5-4d67-af6b-21e4200b29b8",
             "customConfigs": [
                 {
                     "group": "(Custom Properties)",
@@ -123,7 +123,7 @@
                 "width": "auto"
             },
             "name": "MyColumn2",
-            "designerId": "7b7cc1f5-187c-47cb-acf1-02364edb4d6c",
+            "designerId": "8ebaa13f-8734-4cd5-8d15-559053dbd9d7",
             "customConfigs": [
                 {
                     "group": "(Custom Properties)",

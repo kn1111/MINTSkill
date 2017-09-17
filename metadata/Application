@@ -16,6 +16,9 @@
             "GroupPerchase"
         ],
         "name": "QuickStart",
+        "requires": [
+            "Ext.MessageBox"
+        ],
         "stores": [
             "UserDataStore",
             "QuestStore",
@@ -37,7 +40,9 @@
             "BaseMenu",
             "QuestCancelPopup",
             "Menu",
-            "GroupPurchase"
+            "GroupPopup",
+            "grouporder",
+            "GroupPerchase"
         ]
     },
     "configAlternates": {
@@ -46,7 +51,8 @@
         "stores": "typedarray",
         "views": "typedarray",
         "controllers": "typedarray",
-        "defaultToken": "string"
+        "defaultToken": "string",
+        "requires": "typedarray"
     },
     "name": "Application",
     "designerId": "application"

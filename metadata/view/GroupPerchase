@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "grouppurchase",
-        "designer|userClassName": "GroupPurchase",
+        "designer|userAlias": "groupperchase",
+        "designer|userClassName": "GroupPerchase",
         "height": "100%",
         "store": "GroupPerchaseStore",
         "title": "共同購入参加",
@@ -158,10 +158,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "dataIndex": "numberOfContractors",
+                "dataIndex": "contractores",
                 "docked": null,
                 "flex": "1",
-                "text": "現在人数",
+                "text": "現在参加者",
                 "width": 80
             },
             "configAlternates": {
@@ -180,6 +180,63 @@
                     "type": "string"
                 }
             ]
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "perchase",
+                "docked": null,
+                "text": "参加費用",
+                "width": 80
+            },
+            "configAlternates": {
+                "dataIndex": "datafield",
+                "docked": "string",
+                "text": "string",
+                "width": "auto"
+            },
+            "name": "MyColumn12",
+            "designerId": "7b0ac16b-eb7b-44c9-8a6e-1f3b42d741cf"
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onGridChildtap",
+                "implHandler": [
+                    "var record = location.record.data;",
+                    "",
+                    "Ext.Viewport.add({",
+                    "    xtype: 'grouppopup',",
+                    "    width: 400,",
+                    "    record: record,",
+                    "    viewModel : {",
+                    "        data: {",
+                    "            quest: record",
+                    "        }",
+                    "    }",
+                    "});"
+                ],
+                "name": "childtap",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onGridChildtap",
+            "designerId": "6fd0358d-71e4-417e-a8b7-111d82dafd61"
         }
     ]
 }

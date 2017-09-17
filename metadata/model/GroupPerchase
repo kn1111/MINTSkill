@@ -63,7 +63,7 @@
             "designerId": "2b777c9c-b422-47aa-8c60-b262dc00a8a0"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.Integer",
             "reference": {
                 "name": "fields",
                 "type": "array"
@@ -75,7 +75,7 @@
             "configAlternates": {
                 "name": "string"
             },
-            "name": "field11",
+            "name": "MyInteger3",
             "designerId": "b1d6a7e5-95c1-4800-b162-245e818a8ab1"
         },
         {
@@ -95,7 +95,7 @@
             "designerId": "b6b15631-d6cf-4af5-a592-de1aac12ce75"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.Integer",
             "reference": {
                 "name": "fields",
                 "type": "array"
@@ -107,7 +107,7 @@
             "configAlternates": {
                 "name": "string"
             },
-            "name": "field13",
+            "name": "MyInteger2",
             "designerId": "8d183c5b-9cb5-4b53-aedc-faf62fd75aed"
         },
         {
@@ -127,21 +127,25 @@
             "designerId": "06dd153f-3166-4ae6-82d8-fdadb3b8f73c"
         },
         {
-            "type": "Ext.data.field.Field",
+            "type": "Ext.data.field.Integer",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "numberOfContractors"
+                "depends": [
+                    "price",
+                    "fund"
+                ],
+                "name": "perchase"
             },
             "configAlternates": {
-                "mapping": "function",
+                "depends": "typedarray",
                 "name": "string"
             },
-            "name": "field14",
-            "designerId": "585832ad-582d-4618-8079-5673ec93fd70",
+            "name": "MyInteger4",
+            "designerId": "ddf5d13f-cc28-47e8-8744-43453a6eac12",
             "cn": [
                 {
                     "type": "fixedfunction",
@@ -154,9 +158,9 @@
                         "designer|params": [
                             "data"
                         ],
-                        "fn": "mapping",
+                        "fn": "calculate",
                         "implHandler": [
-                            "return data.contractores;"
+                            "return data.price / data.fund ;"
                         ]
                     },
                     "configAlternates": {
@@ -164,8 +168,8 @@
                         "fn": "string",
                         "implHandler": "code"
                     },
-                    "name": "mapping",
-                    "designerId": "533ae975-b04b-4b2d-bf24-812604477587"
+                    "name": "calculate",
+                    "designerId": "b8f372e7-1f81-419e-965e-edba712b1761"
                 }
             ]
         }

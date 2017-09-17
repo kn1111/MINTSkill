@@ -1,17 +1,18 @@
 {
-    "type": "Ext.app.ViewController",
+    "type": "Ext.app.ViewModel",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "questboard",
-        "designer|userClassName": "QuestBoardViewController"
+        "designer|userAlias": "grouporder",
+        "designer|userClassName": "orderViewModel1"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "designerId": "3edc0719-b188-4570-a646-84c845d56b6f"
+    "name": "orderViewModel1",
+    "designerId": "5bd0e101-06a9-4e51-8f4b-211b99fcf378"
 }

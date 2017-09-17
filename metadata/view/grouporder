@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "order",
-        "designer|userClassName": "order",
-        "itemId": "order",
+        "designer|userAlias": "grouporder",
+        "designer|userClassName": "grouporder",
+        "itemId": "grouporder",
         "title": "クエスト依頼",
         "titleAlign": "center"
     },
@@ -22,8 +22,8 @@
         "titleAlign": "string",
         "itemId": "string"
     },
-    "name": "MyFormPanel",
-    "designerId": "88acf63c-a629-412c-aef8-be6e4edc1d8a",
+    "name": "order2",
+    "designerId": "1dee6ffc-5d37-4b0c-ada0-4482ef0460d5",
     "customConfigs": [
         {
             "group": "(Custom Properties)",
@@ -36,8 +36,8 @@
             "type": "string"
         }
     ],
-    "viewControllerInstanceId": "6b2b0a97-8775-4708-906a-6764e74d0c37",
-    "viewModelInstanceId": "ee1be1e6-3306-47b5-9698-eb31346ebd9f",
+    "viewControllerInstanceId": "c537ce7f-b7a4-4e4d-9543-71c3f2e8fca3",
+    "viewModelInstanceId": "5bd0e101-06a9-4e51-8f4b-211b99fcf378",
     "cn": [
         {
             "type": "Ext.Container",
@@ -57,7 +57,7 @@
                 "margin": "auto"
             },
             "name": "MyContainer",
-            "designerId": "a10dd4d3-c61f-44d8-b421-5ae8ebb217b5"
+            "designerId": "40ee504f-f488-4d16-ac1e-5498f6bb3df3"
         },
         {
             "type": "Ext.form.FieldSet",
@@ -67,7 +67,7 @@
             },
             "codeClass": null,
             "name": "MyFieldSet",
-            "designerId": "badfe922-4fca-4977-847d-a9c0e8bd4ba2",
+            "designerId": "848cb638-e300-4f83-83e9-dd5d48871c6b",
             "cn": [
                 {
                     "type": "Ext.field.Text",
@@ -77,8 +77,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "依頼内容",
-                        "name": "missioncontent",
+                        "label": "目的",
+                        "name": "wish",
                         "requiredMessage": "入力してください"
                     },
                     "configAlternates": {
@@ -90,7 +90,7 @@
                         "requiredMessage": "string"
                     },
                     "name": "MyTextField1",
-                    "designerId": "dfc17a45-7a4d-4108-b9f8-7186b41135bd"
+                    "designerId": "6b9ccb53-2348-47b2-af16-da5e185e5080"
                 },
                 {
                     "type": "Ext.field.Number",
@@ -100,8 +100,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": "報酬",
-                        "name": "compensation",
+                        "label": "目標金額",
+                        "name": "price",
                         "requiredMessage": "入力してください"
                     },
                     "configAlternates": {
@@ -113,7 +113,25 @@
                         "requiredMessage": "string"
                     },
                     "name": "MyNumberField",
-                    "designerId": "e324bb3e-af3b-44d5-867e-5f41520200a0"
+                    "designerId": "c702efe1-b37f-4d0c-ae56-589c7bf18d17"
+                },
+                {
+                    "type": "Ext.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "募集人数",
+                        "name": "fund"
+                    },
+                    "configAlternates": {
+                        "label": "string",
+                        "name": "string"
+                    },
+                    "name": "MyNumberField1",
+                    "designerId": "90c11fba-a62f-4149-bdf7-7c02bbbae59d"
                 }
             ]
         },
@@ -131,7 +149,7 @@
                 "height": "auto"
             },
             "name": "MyContainer1",
-            "designerId": "c32695d2-769d-493f-8c40-169b087a5fdb",
+            "designerId": "a067175d-27c1-43b9-8184-cc50174ccc79",
             "cn": [
                 {
                     "type": "Ext.Toolbar",
@@ -149,7 +167,7 @@
                         "height": "auto"
                     },
                     "name": "MyToolbar",
-                    "designerId": "4beeb687-e1be-4c47-bda8-ebf4c6280fb8",
+                    "designerId": "7fcdf6ac-caa2-4d8d-8057-12dccaf807de",
                     "cn": [
                         {
                             "type": "Ext.Button",
@@ -167,7 +185,7 @@
                                 "text": "string"
                             },
                             "name": "MyButton",
-                            "designerId": "877f9f35-bfc7-447c-abbc-c0c760561b41",
+                            "designerId": "5a758204-e55c-489b-bc57-a6da88f811b1",
                             "cn": [
                                 {
                                     "type": "viewcontrollereventbinding",
@@ -179,23 +197,24 @@
                                     "userConfig": {
                                         "fn": "submitUpdate",
                                         "implHandler": [
-                                            "var form = button.up('#order'),",
+                                            "var form = button.up('#grouporder'),",
                                             "    values = form.getValues();",
                                             "console.log(values);",
                                             "",
                                             "var tokenStore = Ext.getStore('UserDataStore');",
-                                            "var queststore = Ext.getStore('QuestStore');",
+                                            "var groupstore = Ext.getStore('GroupPerchaseStore');",
                                             "var token = tokenStore.getData().items[\"0\"].data.token;",
                                             "var username = tokenStore.getData().items[\"0\"].data.username;",
-                                            "var compensation = values.compensation.toString(10);",
-                                            "var obj = {\"peers\": [\"13.113.98.75:7051\"],\"fcn\":\"request\",\"args\":[username,values.missioncontent,compensation]};",
+                                            "var price = values.price.toString(10);",
+                                            "var fund = values.fund.toString(10);",
+                                            "var obj = {\"peers\": [\"13.113.98.75:7051\"],\"fcn\":\"request\",\"args\":[username,values.wish,price,fund]};",
                                             "var authorization = 'Bearer '+token;",
                                             "//Encode Data",
                                             "var data = Ext.JSON.encode(obj);",
                                             "",
                                             "//Post Data",
                                             "Ext.Ajax.request({",
-                                            "    url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc2', // url : this.getUrl(),",
+                                            "    url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc3', // url : this.getUrl(),",
                                             "    method : \"POST\",",
                                             "    headers: {",
                                             "        'authorization': authorization,",
@@ -206,7 +225,7 @@
                                             "",
                                             "    success : function(response) {",
                                             "        Ext.Ajax.request({",
-                                            "            url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc2?peer=peer1&fcn=query&args=%5B%22a%22%5D', // url : this.getUrl(),",
+                                            "            url : 'http://52.199.251.125:4000/channels/mychannel/chaincodes/skillgroup_cc3?peer=peer1&fcn=query&args=%5B%22a%22%5D', // url : this.getUrl(),",
                                             "            method : \"GET\",",
                                             "            headers: {",
                                             "                'Content-Type': 'application/json',",
@@ -214,19 +233,15 @@
                                             "            },",
                                             "",
                                             "            success : function(response) {",
-                                            "                var jsonData = response.responseText;",
-                                            "                console.log(jsonData);",
-                                            "                var loadData = JSON.parse(jsonData);",
-                                            "                console.log(loadData);",
-                                            "                queststore.setData(loadData);",
-                                            "                console.log(queststore);",
-                                            "                Ext.Msg.alert('Success', 'クエストを依頼しました。');",
-                                            "            },",
-                                            "            failure : function(response) {",
-                                            "                Ext.Msg.alert('Error', '通信失敗');",
-                                            "            }",
-                                            "        });",
-                                            "",
+                                            "                var jsonGroupData = response.responseText;",
+                                            "                        var loadGroupData = JSON.parse(jsonGroupData);",
+                                            "                        groupstore.setData(loadGroupData);",
+                                            "                        console.log(groupstore);",
+                                            "                Ext.Msg.alert('Success', '共同購入の募集を開始しました。');",
+                                            "                    },failure : function(response) {",
+                                            "                         Ext.Msg.alert('Error', '通信失敗');",
+                                            "                    }",
+                                            "                });",
                                             "",
                                             "    },",
                                             "    failure : function(response) {",
@@ -249,7 +264,7 @@
                                         "scope": "string"
                                     },
                                     "name": "submitUpdate",
-                                    "designerId": "c845f154-9cc8-481d-addf-f236fed9d6eb"
+                                    "designerId": "25638431-6bda-49fb-8c47-b428beb5e79b"
                                 }
                             ]
                         }
